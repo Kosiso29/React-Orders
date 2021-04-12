@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/React-Orders/static/css/main.08594af6.chunk.css",
+    "main.js": "/React-Orders/static/js/main.8958fd9b.chunk.js",
+    "main.js.map": "/React-Orders/static/js/main.8958fd9b.chunk.js.map",
+    "runtime-main.js": "/React-Orders/static/js/runtime-main.97c518d4.js",
+    "runtime-main.js.map": "/React-Orders/static/js/runtime-main.97c518d4.js.map",
+    "static/js/2.4050bf3b.chunk.js": "/React-Orders/static/js/2.4050bf3b.chunk.js",
+    "static/js/2.4050bf3b.chunk.js.map": "/React-Orders/static/js/2.4050bf3b.chunk.js.map",
+    "index.html": "/React-Orders/index.html",
+    "static/css/main.08594af6.chunk.css.map": "/React-Orders/static/css/main.08594af6.chunk.css.map",
+    "static/js/2.4050bf3b.chunk.js.LICENSE.txt": "/React-Orders/static/js/2.4050bf3b.chunk.js.LICENSE.txt",
+    "static/media/EMS.af64390c.svg": "/React-Orders/static/media/EMS.af64390c.svg",
+    "static/media/Transactions.module.css": "/React-Orders/static/media/foodHero.64e443b4.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.97c518d4.js",
+    "static/js/2.4050bf3b.chunk.js",
+    "static/css/main.08594af6.chunk.css",
+    "static/js/main.8958fd9b.chunk.js"
+  ]
+}
