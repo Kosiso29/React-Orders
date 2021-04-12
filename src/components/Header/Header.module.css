@@ -1,0 +1,32 @@
+.Header {
+  text-align: center;
+  background-color: orange;
+  margin: 0;
+  font-size: 2.5rem;
+  line-height: 6rem;
+  letter-spacing: 2px;
+  position: fixed;
+  top: 0;
+  left: 250px;
+  width: calc(100% - 250px);
+  -webkit-transition: 850ms;
+  transition: 850ms;
+}
+
+@media screen and (max-width: 1000px) {
+  .Header {
+    width: 100%;
+    left: 0;
+    -webkit-transition: 850ms;
+    transition: 850ms;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .Header {
+    font-size: 1.75rem;
+    line-height: 4.5rem;
+    letter-spacing: unset;
+  }
+}
+/*# sourceMappingURL=Header.module.css.map */
