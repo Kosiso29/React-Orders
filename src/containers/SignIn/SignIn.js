@@ -37,13 +37,14 @@ class SignIn extends Component {
             .catch(error => {
                 // console.log(error, error.data, data);
                 this.setState({ error: true });
-                setTimeout(() => {
-                    this.props.history.push('/Dashboard');
-                }, 1000);
+                alert(error);
+                // setTimeout(() => {
+                //     this.props.history.push('/Dashboard');
+                // }, 1000);
             })
-        setTimeout(() => {
-            this.props.history.push('/Dashboard');
-        }, 1000);
+        // setTimeout(() => {
+        //     this.props.history.push('/Dashboard');
+        // }, 1000);
     }
 
     onChangeHandler = (event, input) => {

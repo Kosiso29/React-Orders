@@ -3,6 +3,8 @@ import { NavLink } from "react-router-dom";
 
 import classes from "./Navigation.module.css";
 import Backdrop from "../../UI/Backdrop/Backdrop";
+import Logo from '../../assets/EMS.svg';
+import { connect } from "react-redux";
 
 class Navigation extends Component {
     state = {
@@ -23,6 +25,8 @@ class Navigation extends Component {
                 </div>
                 {this.state.sideBar ? <div className={classes.Backdrop}><Backdrop index="5" clicked={this.sideBarToggle} /></div> : null}
                 <div className={this.state.sideBar ? classes.Navigation : classes.Navigation + " " + classes.Open}>
+                    <img src={Logo} alt="logo"></img>
+                    <p>{this.props.email.split("@")[0]}</p>
                     <span></span>
                     <NavLink onClick={this.sideBarToggle} to="/Dashboard" activeClassName={classes.Active}>Dashboard</NavLink>
                     <span></span>
@@ -38,4 +42,10 @@ class Navigation extends Component {
     }
 }
 
-export default Navigation;
+const mapStateToProps = state => {
+    return {
+        email: state.auth.email
+    }
+}
+
+export default connect(mapStateToProps)(Navigation);

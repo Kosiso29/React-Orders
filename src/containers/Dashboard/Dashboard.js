@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import classes from "./Dashboard.module.css";
 import Header from "../../components/Header/Header";
-// import { connect } from 'react-redux';
+import { connect } from 'react-redux';
 import axios from '../../axios';
 
 class Dashboard extends Component {
@@ -12,7 +12,7 @@ class Dashboard extends Component {
     }
     componentDidMount() {
         // console.log("Dashboard has Initial state of " + this.props.email);
-        axios.get('GtFood?vendorCode=LAW')
+        axios.get('GetFood?vendorCode=LAW')
             .then((response) => {
                 this.setState({
                     items: response.data.data
@@ -35,7 +35,6 @@ class Dashboard extends Component {
                 <tr key={index}>
                     <td>{item.foodName}</td>
                     <td>{item.price}</td>
-                    <td>{item.categoryCode}</td>
                     <td>{item.vendorCode}</td>
                     <td>1</td>
                 </tr>
@@ -55,28 +54,11 @@ class Dashboard extends Component {
                                 <tr>
                                     <th>Food Name</th>
                                     <th>Price</th>
-                                    <th>Category Code</th>
                                     <th>Vendor Code</th>
                                     <th>Qty</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                {/* {this.state.isLodaed ? this.state.items.map((item, index) => (
-                                    <tr key={index}>
-                                        <td>{item[index].foodName}</td>
-                                        <td>{item[index].price}</td>
-                                        <td>{item[index].categoryCode}</td>
-                                        <td>{item[index].vendorCode}</td>
-                                        <td><button>Edit</button></td>
-                                    </tr>
-                                )) : null} */}
-                                {/* <tr>
-                                    <td>{this.state.items[0].foodName}</td>
-                                    <td>{this.state.items[0].price}</td>
-                                    <td>{this.state.items[0].categoryCode}</td>
-                                    <td>{this.state.items[0].vendorCode}</td>
-                                    <td><button>Edit</button></td>
-                                </tr> */}
                                 {testedItem}
                             </tbody>
                         </table>
@@ -88,12 +70,12 @@ class Dashboard extends Component {
     }
 }
 
-// const mapStateToProps = state => {
-//     return {
-//         email: state.auth.email
-//     }
-// }
+const mapStateToProps = state => {
+    return {
+        email: state.auth.email
+    }
+}
 
-export default Dashboard;
+// export default Dashboard;
 
-// export default connect(mapStateToProps)(Dashboard);
+export default connect(mapStateToProps)(Dashboard);

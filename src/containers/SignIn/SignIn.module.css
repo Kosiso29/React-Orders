@@ -4,7 +4,7 @@
 }
 
 .SignIn {
-  background-image: url("../../assets/foodHero.jpg");
+  background-image: url("../../assets/snacksHero1.jpg");
   background-color: lightyellow;
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,7 +25,8 @@
   height: 500px;
   width: 30%;
   min-width: 350px;
-  background-color: rgba(255, 255, 0, 0.6);
+  background-color: rgba(210, 250, 252, 0.6);
+  /*rgba(252,204,160,.6);*/
   border-radius: 25px;
   position: absolute;
   top: 15vh;
@@ -43,7 +44,7 @@
   font-size: 1.25rem;
   padding: 10px 30px;
   background-color: transparent;
-  border: 1px solid red;
+  border: 1px solid green;
   border-radius: 25px;
   outline: none;
   margin-top: 30px;
@@ -64,7 +65,7 @@
   padding: 10px 30px;
   font-size: 1.25rem;
   background-color: rgba(255, 165, 0, 0.3);
-  border: 1px solid red;
+  border: 1px solid green;
   border-radius: 25px;
   margin-top: 30px;
   cursor: pointer;
